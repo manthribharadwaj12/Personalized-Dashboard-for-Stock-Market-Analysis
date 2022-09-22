@@ -1,0 +1,7 @@
+*{ color: white;}
+.row.content {height: 2000px}
+div {color: #ffffff;}
+.sidenav {background-color: #f1f1f1;
+height: 100%;}
+@media screen and (max-width: 767px) {
+.row.content {height: auto;} }

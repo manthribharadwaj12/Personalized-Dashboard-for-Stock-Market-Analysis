@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>Layout</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  color: white;
+  background-color: #1E212F;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-color: #1E212F;
+  min-height: 75%;
+  padding-top: 105px;
+}
+
+.bottom{
+    height: 50px;
+    padding-top: 10px;
+    background-color: #161A27;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+</style>
+<body>
+
+<!-- Header with image -->
+<header class="bgimg" id="home">
+  <div>
+    <center><span class="" style="font-size:60px; color: white;">DASHBOARD FOR STOCK MARKET USING SENTIMENT ANALYSIS</span></center>
+  </div>
+ <center><a href="/Data"><button type="submit" class="button" style="font-size:30px; background-color: royalblue; color: white;margin-top: 100px;box-shadow: blue 1px;">ENTER THE WORLD !</button> </a></center>
+</header>
+
+<!-- Footer -->
+<footer class="bottom">
+ <center> <p>Developed by CSEBNUM_M07</p> </center>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type=text/javascript>
+        $(function() {
+          $('a#test').bind('click', function() {
+            $.getJSON('/Data',
+                function(data) {
+              //do nothing
+            });
+            return false;
+          });
+        });
+</script> 
+</body>
+</html>
